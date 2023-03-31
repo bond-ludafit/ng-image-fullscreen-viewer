@@ -185,7 +185,7 @@ export class NgImageFullscreenViewComponent implements OnDestroy {
             && (this.images[this.currentImageIndex]['image'] || this.images[this.currentImageIndex]['video'])) {
             this.title = this.images[this.currentImageIndex]['title'] || '';
             this.totalImages = this.images.length;
-            for (const iframeI in this.document.getElementsByTagName('iframe')) {
+            /*for (const iframeI in this.document.getElementsByTagName('iframe')) {
                 if (this.document.getElementsByTagName('iframe')[iframeI]
                     && this.document.getElementsByTagName('iframe')[iframeI].contentWindow) {
                     this.document.getElementsByTagName('iframe')[iframeI].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
@@ -195,7 +195,7 @@ export class NgImageFullscreenViewComponent implements OnDestroy {
                 if (this.document.getElementsByTagName('video')[videoI] && this.document.getElementsByTagName('video')[videoI].pause) {
                     this.document.getElementsByTagName('video')[videoI].pause();
                 }
-            }
+            }*/
         }
     }
 
